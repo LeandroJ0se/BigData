@@ -4,10 +4,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
 @Data
-// Order: price;level;levels;rooms;area;kitchen_area;geo_lat;geo_lon;building_type;object_type;postal_code;street_id;id_region;house_id
-@JsonPropertyOrder({"price", "level", "levels", "rooms", "area", "kitchen_area", "geo_lat", "geo_lon", "building_type",
+// Order: id;price;level;levels;rooms;area;kitchen_area;geo_lat;geo_lon;building_type;object_type;postal_code;street_id;id_region;house_id
+@JsonPropertyOrder({"id", "price", "level", "levels", "rooms", "area", "kitchen_area", "geo_lat", "geo_lon", "building_type",
         "object_type", "postal_code", "street_id", "id_region", "house_id"})
 public class HotelEntry {
+    private int id;
     private float price;
     private int level;
     private int levels;

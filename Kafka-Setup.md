@@ -30,6 +30,7 @@ mkdir logs
 
 ### Create a topic
 - `./bin/kafka-topics.sh --create --topic streaming-bd --bootstrap-server <WSL-IP>:9092 --replication-factor 1 --partitions 1`
+- `./bin/kafka-topics.sh --create --topic streaming-feedback-bd --bootstrap-server <WSL-IP>:9092 --replication-factor 1 --partitions 1`
 
 ### List topics to check if everything is fine
 - `./bin/kafka-topics.sh --list --bootstrap-server <WSL-IP>:9092`
