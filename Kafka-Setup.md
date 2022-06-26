@@ -12,7 +12,7 @@ sudo apt upgrade
 sudo apt-get install curl
 sudo apt-get install vim
 curl https://dlcdn.apache.org/kafka/3.2.0/kafka_2.12-3.2.0.tgz -o kafka_2.12-3.2.0.tgz
-tar -xvf .\kafka_2.12-3.2.0.tgz
+tar -xvf ./kafka_2.12-3.2.0.tgz
 cd kafka_2.12-3.2.0
 mkdir logs
 ```
