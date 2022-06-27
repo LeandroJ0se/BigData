@@ -3,12 +3,16 @@ package com.isec.bd.streaming.model;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Data;
 
+import java.sql.Date;
+
+
 @Data
 // Order: id;price;level;levels;rooms;area;kitchen_area;geo_lat;geo_lon;building_type;object_type;postal_code;street_id;id_region;house_id
-@JsonPropertyOrder({"id", "price", "level", "levels", "rooms", "area", "kitchen_area", "geo_lat", "geo_lon", "building_type",
+@JsonPropertyOrder({"id", "date", "price", "level", "levels", "rooms", "area", "kitchen_area", "geo_lat", "geo_lon", "building_type",
         "object_type", "postal_code", "street_id", "id_region", "house_id"})
 public class HotelEntry {
     private int id;
+    private Date date;
     private float price;
     private int level;
     private int levels;

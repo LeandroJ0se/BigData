@@ -34,6 +34,10 @@ mkdir logs
 
 ### List topics to check if everything is fine
 - `./bin/kafka-topics.sh --list --bootstrap-server <WSL-IP>:9092`
+
+### Check kafka 
+ps -ef | grep kafka | wc -l
+
 ***
 ## At this moment your kafka is ready to rock and roll
 

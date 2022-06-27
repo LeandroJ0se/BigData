@@ -34,12 +34,16 @@ public class KafkaConsumerRunnable implements Runnable {
 
     @Override
     public void run() {
-
+        String color;
         try {
             while (true) {
                 ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
                 for (ConsumerRecord<String, String> record : records) {
-                    System.out.println("\u001B[32m" + "Kafka Stream : Feedback Event : " + record.value());
+                    if(record.value().contains("Good"))
+                        color = "\u001B[32m";
+                    else
+                        color = "\u001B[31m";
+                    System.out.println(color + "Kafka Stream : Feedback Event : " + record.value());
                 }
             }
         } catch (Exception ex) {

@@ -52,7 +52,7 @@ public class KafkaProducerRunnable implements Runnable {
 
             final CsvSchema csvSchema = csvMapper
                     .typedSchemaFor(HotelEntry.class)
-//                    .withHeader() // If needed for headers
+                    .withHeader() // If needed for headers
                     .withColumnSeparator(';');
 
             final MappingIterator<HotelEntry> it = csvMapper
