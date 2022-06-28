@@ -71,7 +71,7 @@ public class KafkaProducerRunnable implements Runnable {
                 System.out.println("\u001B[35m" + "Kafka Stream : Sending Event  : " + entry.value());
 
                 //Sleep for 3 secs before the next row.
-                Thread.sleep(3000);
+                Thread.sleep(10000);
             }
         } catch (Exception ex) {
             ex.printStackTrace();
